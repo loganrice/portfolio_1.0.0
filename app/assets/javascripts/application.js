@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready( function() {
+  windowHeight = $(window).height();
+  $('#projects').height(windowHeight);
+  
+});

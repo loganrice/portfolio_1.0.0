@@ -17,6 +17,7 @@
 $navbar-color: #222222;
 $navbar-font-color: #999;
 $navbar-font-hover-color: #fff;
+$font: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
 .main-nav {
   ul {
@@ -30,9 +31,9 @@ $navbar-font-hover-color: #fff;
       float: left;
       a {
         display: block;
-        padding: 8px 15px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        padding: 18px 15px;
         font-size: 14px;
+        font-family: $font;
         color: $navbar-font-color;
         text-decoration: none;
         &:hover {
@@ -41,4 +42,33 @@ $navbar-font-hover-color: #fff;
       }
     }
   }
+}
+
+.title {
+  font-family: $font;
+  font-size: 24px;
+}
+
+.project-image {
+  width: 250px;
+}
+
+.projects {
+  ul {
+    background-color: transparent;
+    li {
+      a {
+        color: #2a6496;
+        &:hover {
+        color: #2a6496;
+        background-color: #eee;
+        }
+      }
+    }
+  }
+}
+
+#projects {
+  padding: 25px;
+  background-color: #c9cacc;
 }

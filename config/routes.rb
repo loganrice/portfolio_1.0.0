@@ -5,6 +5,10 @@ Portfolio::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'portfolio#index'
 
+  get 'frontend' => 'project#frontend'
+  get 'ember' => 'project#ember'
+  get 'rails' => 'project#rails'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
