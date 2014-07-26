@@ -8,10 +8,13 @@
 </head>
 <body>
 <nav class='main-nav'>
-  <ul>
+  <ul class='nav-links'>
     <li class='brand'><a>Logan Rice</a></li>
-    <li><a href="#projects">Projects</a>
-    <li><a href='#about'>About</a></li>
+    <li class='link'>
+      <%= link_to 'Projects', root_path, class:'link' %>
+    <li>
+      <%= link_to 'About', about_path %>
+    </li>
     <li><a href='#contact'>Contact</a></li>
   </ul>
 </nav>
