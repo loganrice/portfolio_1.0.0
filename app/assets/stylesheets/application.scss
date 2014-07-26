@@ -19,6 +19,10 @@ $navbar-font-color: #999;
 $navbar-font-hover-color: #fff;
 $font: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
+body {
+  background-color: #c9cacc;
+}
+
 .main-nav {
   ul {
     float: left;
@@ -47,6 +51,7 @@ $font: "Helvetica Neue",Helvetica,Arial,sans-serif;
 .title {
   font-family: $font;
   font-size: 24px;
+  padding: 15px;
 }
 
 .project-image {
@@ -68,7 +73,62 @@ $font: "Helvetica Neue",Helvetica,Arial,sans-serif;
   }
 }
 
-#projects {
+#projects, #about {
   padding: 25px;
-  background-color: #c9cacc;
+}
+
+.well {
+  background-color: #eee;
+  height: 400px;
+  padding-top: 30px;
+}
+
+.self-image {
+  height: 100%;
+  float: left;
+}
+
+.self-description {
+  font-size: 21px;
+}
+
+.education {
+  border: 1px solid #ddd;
+  width: 275px;
+  float: left;
+  margin: 30px;
+  font-family: $font;
+  .label-header {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px;
+  }
+  .label {
+    @extend .label-header;
+    background-color: white;
+  }
+  .description {
+    padding: 0 5px 0 15px;
+    background-color: white;
+    font-size: 85%;
+  }
+}
+
+#contact {
+  margin: 0 40px 0 40px;
+}
+
+.contact-details {
+  background-color: white;
+  border-radius: 4px;
+  font-family: $font;
+  ul {
+    li {
+      border-bottom: 1px solid #ddd;
+      padding: 15px;
+      a {
+      text-decoration: none;
+      }
+    }
+  }
 }
