@@ -3,6 +3,8 @@ class ProjectController < ApplicationController
     @images = []
     @images << 'list.png'
     @images << 'street_fighter.png'
+    @images << 'monkey-clock.png'
+    @images << 'simple_time.png'
     render '/portfolio/index'
   end
 

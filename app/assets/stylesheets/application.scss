@@ -27,7 +27,7 @@ body {
   ul {
     float: left;
     width: 100%;
-    margin: 0 0 3em 0;
+    margin: 0 0 15px 0;
     padding: 0;
     list-style-type: none;
     background-color: $navbar-color;
@@ -48,6 +48,9 @@ body {
   }
 }
 
+.project-nav {
+  margin-bottom: 10px;
+}
 .title {
   font-family: $font;
   font-size: 24px;
