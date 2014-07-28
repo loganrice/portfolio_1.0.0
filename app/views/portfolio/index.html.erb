@@ -5,12 +5,12 @@
     <ul class='project-nav'>
       <li><%= link_to 'Front End', frontend_path %></li>
       <li><%= link_to 'Ember', ember_path %></li>
-      <li><%= link_to 'Rails', rails_path %></li>
+      <li><%= link_to 'Sinatra', sinatra_path %></li>
     </ul>
   </nav>
 
   <br>
-  <% @images.each do |image| %>
-    <%= image_tag image, class:'project-image' %>
+  <% @images.each do |image, url| %>
+    <a href=<%= url %>><%= image_tag image, class:'project-image' %></a>
   <% end %>
 </section>

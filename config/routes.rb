@@ -7,7 +7,7 @@ Portfolio::Application.routes.draw do
 
   get 'frontend' => 'project#frontend'
   get 'ember' => 'project#ember'
-  get 'rails' => 'project#rails'
+  get 'sinatra' => 'project#sinatra'
   get 'about' => 'about#index'
   get 'contact' => 'contact#index'
 
